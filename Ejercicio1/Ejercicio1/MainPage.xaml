@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="BIENVENIDO!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label TextColor="White" 
+               FontSize="Medium">
+            <Label.FormattedText>
+                <FormattedString>
+
+                    <Span Text="Numero 1 "  />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label >
+         <Entry x:Name="txtnumero1"  BackgroundColor="#439BB7" Keyboard="Numeric" />
+
+        <Label TextColor="White" 
+               FontSize="Medium">
+            <Label.FormattedText>
+                <FormattedString>
+
+                    <Span Text="Numero 2 "  />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label >
+        <Entry x:Name="txtnumero2"  BackgroundColor="#439BB7" Keyboard="Numeric" />
+
+        <Button x:Name="btnsuma" BackgroundColor="#EAE40B" FontSize="Medium"  Margin="4" Text="SUMA" Clicked="btnsuma_Clicked"/>
+        <Button x:Name="btnresta" BackgroundColor="#EAE40B" FontSize="Medium"  Margin="4" Text="RESTA" Clicked="btnresta_Clicked" />
+        <Button x:Name="btndivision" BackgroundColor="#EAE40B" FontSize="Medium" Margin="4" Text="DIVISION" Clicked="btndivision_Clicked" />
+        <Button x:Name="btnmultiplicacion" BackgroundColor="#EAE40B" FontSize="Medium" Margin="4" Text="MULTIPLICACION" Clicked="btnmultiplicacion_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
